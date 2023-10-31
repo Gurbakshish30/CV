@@ -2,29 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        em {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+            ul {
+                padding: 0;
+            }
+            li {
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>YOU CAN CONTACT ME HERE</h1>
     <ul>
-        <li>my phone number= <em>9569960920</em></li>
-        <li>my email id <em>gurbakshishs30@gmail.com</em></li>
-        <li>my linked in profile <a href="https://www.linkedin.com/in/gurbakshish-singh-042210255/">Gurbakshish Singh linkedin</a></li>
-        <li>my instagram profile <a href="https://www.instagram.com/">Gurbakshish instagram</a></li>
+        <li>my phone number: <em>9569960920</em></li>
+        <li>my email id: <em>gurbakshishs30@gmail.com</em></li>
+        <li>my LinkedIn profile: <a href="https://www.linkedin.com/in/gurbakshish-singh-042210255/">Gurbakshish Singh LinkedIn</a></li>
+        <li>my Instagram profile: <a href="https://www.instagram.com/">Gurbakshish Instagram</a></li>
     </ul>
     <form action="mailto:gurbakshishs30@gmail.com" method="post" enctype="text/plain">
-        <label for="">YOUR NAME</label>
-        <input type="text" name="your name"><br>
-        <label for="">YOUR EMAIL ADDRESS</label>
-        <input type="email" name="your email"><br>
-        <label for="">Enter your password</label>
-        <input type="password">
+        <label for="yourName">Your Name</label>
+        <input type="text" name="yourName" id="yourName">
+        <label for="yourEmail">Your Email Address</label>
+        <input type="email" name="yourEmail" id="yourEmail">
+        <label for="password">Enter Your Password</label>
+        <input type="password" id="password">
         <input type="submit">
-        <label for="">Tick if you have submitted your password</label>
-        <input type="checkbox"><br>
-        <label for="">enter text</label>
-        <textarea name="your text" id="" cols="30" rows="10"></textarea>
+        <label for="passwordCheckbox">Tick if you have submitted your password</label>
+        <input type="checkbox" id="passwordCheckbox">
+        <label for="yourText">Enter Text</label>
+        <textarea name="yourText" id="yourText" cols="30" rows="10"></textarea>
     </form>
-
 </body>
 </html>
